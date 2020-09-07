@@ -45,6 +45,16 @@ public class R {
         return r;
     }
 
+    public R success(Boolean success) {
+        this.setSuccess(success);
+        return this;
+    }
+
+    public R message(String message) {
+        this.setMessage(message);
+        return this;
+    }
+
     public R data(String key, Object value) {
         this.data.put(key, value);
         return this;
